@@ -33,3 +33,8 @@ for url in parser.results:
         f = open((imgData + '{}.jpg'.format(os.path.basename(url).split(".")[0])),'wb')
         f.write(requests.get(url).content)
         f.close()
+        
+# Quicker way only for downloading
+# Change the code for generating a Excel list with all *.jpg links
+# Then enter in your bash in the right folder: wget -i [name of file].csv
+# more information: https://wiki.ubuntuusers.de/wget/
